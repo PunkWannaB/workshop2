@@ -1,0 +1,31 @@
+Task 1: Amazon Web Services part 1
+
+add a new inbound rule for your EC2 instance's security group and create a new ECR repository.
+
+Public IPv4 DNS:
+ec2-52-204-186-24.compute-1.amazonaws.com
+
+
+The Security Group for your instance is named django_docker_aws
+
+
+Create Repository workshop2
+Retrieve an authentication token and authenticate your Docker client to your registry.
+Use the AWS CLI:
+
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 458481400666.dkr.ecr.us-east-1.amazonaws.com
+
+the workshop2 repository's URI,
+458481400666.dkr.ecr.us-east-1.amazonaws.com/workshop2
+
+
+
+Task 2: Amazon Web Services Part 2 - Amazon RDS
+
+Endpoint & port
+Endpoint
+nctutorials.c7kkfsq9em83.us-east-1.rds.amazonaws.com
+Port
+5432
+
+Task 3: Local Environment Setup
